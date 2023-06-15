@@ -11,7 +11,7 @@ const cors = require('cors');
 
 // middlewares
 app.use(cors(
-  {origin:["https://deploy-ecom-server-mern-2-1waq.vercel.app"],
+  {origin:["https://deploy-ecom-server-mern-2.vercel.app"],
   methods:["POST","GET"],
   credentials:true,
 }
