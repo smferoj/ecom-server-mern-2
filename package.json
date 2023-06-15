@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "mongoose": "^6.8.2",
     "morgan": "^1.10.0",
     "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
     "paypal-rest-sdk": "^1.8.1",
     "slugify": "^1.6.5"
   }
