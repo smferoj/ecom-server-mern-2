@@ -1,5 +1,4 @@
 const { readdirSync } = require("fs");
-const { v4 } = require('uuid');
 const path = require("path");
 const express = require('express');
 const app = express();
@@ -11,7 +10,12 @@ const cors = require('cors');
 
 
 // middlewares
-app.use(cors());
+app.use(cors(
+  {origin:["https://deploy-ecom-server-mern-2-1waq.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true,
+}
+));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
